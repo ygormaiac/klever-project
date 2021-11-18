@@ -37,10 +37,10 @@ Extra:
 #### :rocket: Execução
 
 `npm start`
-> Iniciar aplicação através do app.js, nota: Antes de entrar no html servido pela pasta public, rode o comando npm run build para a versão mais recente em produção 
+> Iniciar aplicação através do App.js.
 
 `npm run dev`
-> Para rodar o projeto localmente, nele antes é inicilizado o server no arquivo app, e logo em seguido o servidor referente ao ambiente de desenvolvimento.
+> Para rodar o projeto localmente, nele antes é inicializado o server no arquivo app, e logo em seguida o servidor referente ao ambiente de desenvolvimento.
 
 `npm run build`
 > Compila o código em desenvolvimento para ser servido na pasta public
