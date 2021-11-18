@@ -8,7 +8,7 @@ export default function TableItems() {
                 <th>Valor</th>
                 <th>Criptomoeda</th>
                 <th>Método de pagamento</th>
-                <th>Editar/Excluir</th>
+                <th>Excluir/Editar</th>
             </tr>
             <WalletItem />
         </table>
