@@ -1,7 +1,9 @@
-import { fireEvent, screen } from '@testing-library/react';
+import { fireEvent, screen, render } from '@testing-library/react';
 import App from './App';
 import Login from './pages/Login';
+import Homepage from './pages/Homepage';
 import renderWithRouter from './renderWithRouter';
+import Wallet from './pages/Wallet';
 
 describe('Testando a homepage e a página de login', () => {
   test('Testar se o link com texto "Login" redireciona para a rota "/login" ', () => {
@@ -13,6 +15,7 @@ describe('Testando a homepage e a página de login', () => {
     expect(pathname).toBe('/login');
   });
   test('Testar se existe um parágrafo com o texto inicial', () => {
+    render(<App />);
     const initialText = screen.getByRole('paragraph', {
       name: /A maior plataforma de criptomoedas/i,
     });
@@ -40,10 +43,30 @@ describe('Testando a homepage e a página de login', () => {
     });
     expect(inputText).toBeInTheDocument();
   });
-  test('Verifica se existe um botão de excluir', () => {
+  test('Verifica se existe um botão de editar', () => {
     const btnDelete = screen.getByRole('button', {
       name: /editar/i,
     });
     expect(btnDelete).toBeInTheDocument();
-  })
-})
+  });
+  test('Verifica se existe um h3 na página', () => {
+    render(<Homepage />);
+    const titleH3 = screen.getByRole('heading', {
+      name: /Comece agora de forma/i,
+    });
+    expect(titleH3).toBeInTheDocument();
+  });
+  test('Verifica se o Header contém uma imagem', () => {
+    render(<Homepage />);
+    const headerImg = screen.getByAltText('logo-klever');
+    expect(headerImg).toHaveAttribute('src', 'https://s2.coinmarketcap.com/static/img/coins/200x200/6724.png');
+  });
+  test('Verifica se o botão de Sign Out redireciona para a página inicial', () => {
+    const { history } = renderWithRouter(<Wallet />);
+    fireEvent.click(screen.getByRole('button', {
+      name: /Sign In/i,
+    }));
+    const { pathname } = history.location;
+    expect(pathname).toBe('/');
+  });
+});
