@@ -27,8 +27,8 @@ Frontend:
 - :white_check_mark: Usar Redux para manutenção dos estados
 
 Extra:
-- :white_check_mark: Use Hooks
-- :white_check_mark: Use Mocha/Jest for unit, snapshots and integration tests
+- :white_check_mark: Usar Hooks
+- :white_check_mark: Usar Mocha/Jest para realizar testes de integração
 
 ## :open_book: Informações
 
@@ -51,9 +51,9 @@ Utilizei **NodeJs** para o desenvolvimento da API que foi utilizada e consumida 
 
 ![NodeJs](assets/api-nodejs.png)
 
-Foi utilizado o Postman para verificar se as rotas estavam em pleno funcionamento para gerar o JSON vindo da API.
+Foi utilizado o **Postman** para verificar se as rotas estavam em pleno funcionamento para gerar o JSON vindo da API.
 
-![Postman](assets/api.postman.png)
+![Postman](assets/api-postman.png)
 
 Para a parte de _gerenciamento de estado da aplicação_, optei pela implementação com **Redux Toolkit** prevendo _escalabilidade_ na aplicação, pois features novas sempre irão surgir.
 
