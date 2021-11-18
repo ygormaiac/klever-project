@@ -11,7 +11,7 @@ Os testes foram criados com a React Testing Library utilizando também o framewo
 
 ![Logo Klever](assets/homepage1.png)
 
-:globe_with_meridians: Demonstração [Aqui](klever-project.vercel.app)
+:globe_with_meridians: Demonstração [Aqui](https://klever-project.vercel.app)
 
 ## :scroll: Regras do negócio:
 
