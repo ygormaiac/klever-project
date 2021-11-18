@@ -5,8 +5,10 @@ import { moneyActions } from '../redux/reducers/money';
 
 export default function WalletItem() {
     const money = useSelector((state) => state.money.money);
+
     const dispatch = useDispatch();
     const deleteClick = (id) => dispatch(moneyActions.removeToMoney(id));
+    const editClick = (id) => dispatch(moneyActions.editToMoney(id));
 
     return (
         money.map((expense) => (
@@ -23,7 +25,8 @@ export default function WalletItem() {
                 >
                     <BiTrash size={20} />
                 </button>
-                <button 
+                <button
+                    onClick={() => editClick(expense.id)}
                     type="button"
                     data-testid="edit-btn"
                     className="button-edit"
@@ -33,5 +36,5 @@ export default function WalletItem() {
                 </td>
             </tr>
         ))
-    )
+    );
 }
