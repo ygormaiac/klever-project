@@ -13,18 +13,18 @@ Os testes foram criados com a React Testing Library utilizando também o framewo
 
 ## :scroll: Regras do negócio:
 
-The Technical Challenge consists of creating an web application that performs a CRUD (Create, Read, Update, Delete).
-Then the frontend application should be created with React and should consume a mock API.
+O Desafio Técnico consiste em criar uma aplicação web que realiza um CRUD (Create, Read, Update, Delete).
+Em seguida, a aplicação deve ser criada com React e deve consumir uma API simulada (Mock).
 
-Technical requirements:
-- :white_check_mark: Keep the code in Github
-- :white_check_mark: Create npm execution scripts
+Requerimentos técnicos:
+- :white_check_mark: Mantenha o código no Github
+- :white_check_mark: Crie scripts de execução npm
 
 Frontend:
 - :white_check_mark: React
-- :white_check_mark: Consume the mock API
-- :white_check_mark: Validate the inputs
-- :white_check_mark: Use Redux to manage states
+- :white_check_mark: Consumir a mock API
+- :white_check_mark: Validar os inputs
+- :white_check_mark: Usar Redux para manutenção dos estados
 
 Extra:
 - :white_check_mark: Use Hooks
@@ -48,6 +48,12 @@ Extra:
 Utilizei **React** para o desenvolvimento da aplicação web.
 
 Utilizei **NodeJs** para o desenvolvimento da API que foi utilizada e consumida no projeto. Junto com o NodeJs, utilizei o framework **Express** para a criação das rotas no backend.
+
+![NodeJs](assets/api-nodejs.png)
+
+Foi utilizado o Postman para verificar se as rotas estavam em pleno funcionamento para gerar o JSON vindo da API.
+
+![Postman](assets/api.postman.png)
 
 Para a parte de _gerenciamento de estado da aplicação_, optei pela implementação com **Redux Toolkit** prevendo _escalabilidade_ na aplicação, pois features novas sempre irão surgir.
 
