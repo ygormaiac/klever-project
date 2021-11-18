@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Klever Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido para processo seletivo na [Klever](https://klever.io).
 
-## Available Scripts
+<img height="120px" width="140px" align="right" src="https://play-lh.googleusercontent.com/R-xF1HmwvKIk7GjhViSnQ6sdrepj7LXBqtTqolfiBiQA2bkR9rrjpl5QEveM23J2vW8" />
 
-In the project directory, you can run:
+## :bookmark_tabs: Sobre o projeto:
 
-### `yarn start`
+Nesse projeto foi desenvolvido um CRUD (Create, Read, Update, Delete) através de uma interface que simula um site de Blockchain e Criptomoedas. Foram utilizadas tecnologias como React, Redux e SCSS.
+Os testes foram criados com a React Testing Library utilizando também o framework Jest.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Logo Klever](assets/homepage1.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :scroll: Regras do negócio:
 
-### `yarn test`
+The Technical Challenge consists of creating an web application that performs a CRUD (Create, Read, Update, Delete).
+Then the frontend application should be created with React and should consume a mock API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technical requirements:
+- :white_check_mark: Keep the code in Github
+- :white_check_mark: Create npm execution scripts
 
-### `yarn build`
+Frontend:
+- :white_check_mark: React
+- :white_check_mark: Consume the mock API
+- :white_check_mark: Validate the inputs
+- :white_check_mark: Use Redux to manage states
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Extra:
+- :white_check_mark: Use Hooks
+- :white_check_mark: Use Mocha/Jest for unit, snapshots and integration tests
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :open_book: Informações
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### :rocket: Execução
 
-### `yarn eject`
+`npm start`
+> Iniciar aplicação através do app.js, nota: Antes de entrar no html servido pela pasta public, rode o comando npm run build para a versão mais recente em produção 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`npm run dev`
+> Para rodar o projeto localmente, nele antes é inicilizado o server no arquivo app, e logo em seguido o servidor referente ao ambiente de desenvolvimento.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run build`
+> Compila o código em desenvolvimento para ser servido na pasta public
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### 📓 Soluções adotadas e informações
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Utilizei **React** para o desenvolvimento da aplicação web.
 
-## Learn More
+Utilizei **NodeJs** para o desenvolvimento da API que foi utilizada e consumida no projeto. Junto com o NodeJs, utilizei o framework **Express** para a criação das rotas no backend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para a parte de _gerenciamento de estado da aplicação_, optei pela implementação com **Redux Toolkit** prevendo _escalabilidade_ na aplicação, pois features novas sempre irão surgir.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A aplicações consistem da tela inicial, onde criei uma `Homepage` simulando um site de Blockchain e Criptomoedas, onde uma das sessões é alimentada pela API que criei para esse projeto. Temos também uma página de `Login` para o usuário cadastrar seu nome e e-mail para poder ter acesso a página de ativos, que é a `Carteira`. Para o controle dessas rotas, utilizo o `react-router-dom`.
 
-### Code Splitting
+Extensões utilizadas que auxiliam a visualização de props do React e de disparo de actions do Redux:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+- [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR)
 
-### Analyzing the Bundle Size
+Para visualização da performance do site é utilizado o [Lighthouse](https://developers.google.com/web/tools/lighthouse?hl=pt-br)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### :gear: Tecnologias utilizadas
 
-### Making a Progressive Web App
+1. [React](https://pt-br.reactjs.org/): Utilizado React para criação da interface da aplicação web.
+1. [Redux](https://redux.js.org/): Para gerenciamento de estado da aplicação.
+2. [NodeJs](https://nodejs.org/en/): Para criação da API.
+3. [SCSS](https://sass-lang.com/): Para estilização de todo o projeto.
+6. [react-router-dom](https://reactrouter.com/web/api/): Para gereciamento de rotas na aplicação.
+7. [RTL](https://testing-library.com/docs/react-testing-library/intro/): Para testes na aplicação
+8. [Eslint](https://eslint.org/): Para estilização e padronização com boas práticas de código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
