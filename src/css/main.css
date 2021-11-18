@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Red+Hat+Display&family=Righteous&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Red+Hat+Display&family=Righteous&family=Roboto:wght@300&family=Source+Code+Pro:wght@600&family=Ubuntu:wght@500&display=swap");
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d1e20;
+  margin-bottom: 50px;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header-button-login {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6b2aa8;
+  width: 120px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.header-button-login:hover {
+  opacity: .9;
+}
+
+.header-link-login {
+  color: #fff;
+  font-family: 'Red Hat Display', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.section-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-initial {
+  font-size: 1.8em;
+  padding: 30px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.initial-animation {
+  color: #6b2aa8;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 10px;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px #1d1e20;
+}
+
+.section-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.img-card-cripto {
+  width: 70px;
+  height: 40px;
+}
+
+.cripto-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  padding: 50px;
+  z-index: 2;
+  border: 1px solid #E5E5E5;
+  -webkit-box-shadow: 1px 2px 3px #E5E5E5;
+          box-shadow: 1px 2px 3px #E5E5E5;
+  margin: 30px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  height: 250px;
+  opacity: .9;
+  z-index: -1;
+}
+
+.section-information {
+  border-top: 2px solid #1d1e20;
+  border-bottom: 2px solid #1d1e20;
+  margin-top: 80px;
+  display: -ms-grid;
+  display: grid;
+  background-color: #1d1e20;
+}
+
+.information-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards-information {
+  max-width: 260px;
+  max-height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+  padding: 40px;
+  z-index: 2;
+  border: 1px solid #E5E5E5;
+  -webkit-box-shadow: 1px 2px 3px #E5E5E5;
+          box-shadow: 1px 2px 3px #E5E5E5;
+  margin: 30px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  background-color: whitesmoke;
+}
+
+.cards-information:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.title-information {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: whitesmoke;
+}
+
+.number-information {
+  font-size: 3.5em;
+  margin-right: 40px;
+  color: #6b2aa8;
+  font-family: 'Righteous', cursive;
+  text-shadow: 2px 2px 3px #1d1e20;
+}
+
+.subtitle-information {
+  font-weight: bolder;
+  margin-right: 30px;
+}
+
+.title-selection {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #1d1e20;
+}
+
+.selection-cripto {
+  width: 150px;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  padding: 50px;
+  z-index: 2;
+  border: 1px solid #E5E5E5;
+  -webkit-box-shadow: 1px 2px 3px #E5E5E5;
+          box-shadow: 1px 2px 3px #E5E5E5;
+  margin: 30px;
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+
+.selection-cripto:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.img-criptos {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.symbol-criptos {
+  font-size: .8em;
+  margin-left: 15px;
+}
+
+.price-criptos {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.selection-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer-home {
+  background-color: #1d1e20;
+  height: 100px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer-details {
+  list-style: none;
+  margin: 2px;
+}
+
+.login-container {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid #E5E5E5;
+  margin-top: 200px;
+  padding: 50px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.login-logo {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.input-login {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  height: 30px;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+}
+
+.input-login:focus {
+  outline: none;
+  border-color: #6b2aa8;
+  -webkit-box-shadow: 0 0 6px #6b2aa8;
+          box-shadow: 0 0 6px #6b2aa8;
+}
+
+.button-login {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 40px;
+  background-color: #6b2aa8;
+  color: whitesmoke;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.button-login:hover {
+  opacity: .9;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-wallet {
+  margin-top: 80px;
+  padding: 40px;
+  background: #E5E5E5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-wallet {
+  margin-right: 50px;
+  margin-left: 10px;
+  padding: 9px;
+  border-radius: 3px;
+  border: 1px solid #6b2aa8;
+}
+
+.input-wallet:focus {
+  outline: none;
+  border-color: #6b2aa8;
+  -webkit-box-shadow: 0 0 6px #6b2aa8;
+          box-shadow: 0 0 6px #6b2aa8;
+}
+
+.label-wallet {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.select-wallet {
+  padding: 8px;
+  margin-right: 50px;
+  margin-left: 10px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  border: 1px solid #6b2aa8;
+}
+
+.select-wallet:focus {
+  outline: none;
+  border-color: #6b2aa8;
+  -webkit-box-shadow: 0 0 6px #6b2aa8;
+          box-shadow: 0 0 6px #6b2aa8;
+}
+
+.wallet-button {
+  background: #6b2aa8;
+  font-family: 'Red Hat Display', cursive;
+  color: #E5E5E5;
+  letter-spacing: 2px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  width: 140px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wallet-button:hover {
+  opacity: .9;
+}
+
+.table-items {
+  display: -ms-grid;
+  display: grid;
+}
+
+.tr-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #6b2aa8;
+  color: #E5E5E5;
+  padding: 12px;
+}
+
+.tr-items-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.button-delete, .button-edit {
+  margin: 5px;
+  background: #6b2aa8;
+  color: #E5E5E5;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button-delete:hover, .button-edit:hover {
+  background: red;
+}
+
+td {
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=main.css.map */
