@@ -2,8 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Red+Hat+Display&family=Righteous&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Red+Hat+Display&family=Righteous&family=Roboto:wght@300&family=Source+Code+Pro:wght@600&family=Ubuntu:wght@500&display=swap");
+@media screen and (max-width: 1250px) {
+  .section-presentation, .section-details, .information-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .section-initial {
+    margin-left: 60px;
+  }
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  width: 100%;
 }
 
 a {
@@ -127,12 +142,11 @@ a {
 }
 
 .section-information {
-  border-top: 2px solid #1d1e20;
-  border-bottom: 2px solid #1d1e20;
   margin-top: 80px;
   display: -ms-grid;
   display: grid;
-  background-color: #1d1e20;
+  background: -webkit-gradient(linear, left top, right top, from(#1d1e20), to(#6b2aa8));
+  background: linear-gradient(to right, #1d1e20, #6b2aa8);
 }
 
 .information-details {

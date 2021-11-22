@@ -10,7 +10,7 @@ const moneySlice = createSlice({
   reducers: {
     addToMoney(state, action) { state.money.push(action.payload) },
     removeToMoney(state, action) { state.money = state.money.filter((m) => m.id !== action.payload) },
-    editToMoney(state, action) { state.money = state.money.map((m) => m.id === action.payload.id ? action.payload : m) },
+    editToMoney(state, action) { state.money = state.money.map((m) => m.id === action.payload.id) },
     getMoneyDetails(state, action) { state.money = state.money.find((m) => m.id === action.payload) },
   },
 });

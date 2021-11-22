@@ -8,7 +8,7 @@ export default function Homepage() {
     const { data } = useFetchApi();
 
     return (
-        <div>
+        <div className="container-sections">
             <Header />
             <section className="section-presentation">
                 <div className="section-initial">
