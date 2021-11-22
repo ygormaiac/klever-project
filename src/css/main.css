@@ -413,7 +413,7 @@ a {
   padding: 10px;
 }
 
-.button-delete, .button-edit {
+.button-delete, .button-edit, .button-details {
   margin: 5px;
   background: #6b2aa8;
   color: #E5E5E5;
@@ -423,8 +423,12 @@ a {
   cursor: pointer;
 }
 
-.button-delete:hover, .button-edit:hover {
+.button-delete:hover, .button-edit:hover, .button-details:hover {
   background: red;
+}
+
+.link-details {
+  text-decoration: none;
 }
 
 td {

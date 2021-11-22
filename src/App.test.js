@@ -15,10 +15,8 @@ describe('Testando a homepage e a página de login', () => {
     expect(pathname).toBe('/login');
   });
   test('Testar se existe um parágrafo com o texto inicial', () => {
-    render(<App />);
-    const initialText = screen.getByRole('paragraph', {
-      name: /A maior plataforma de criptomoedas/i,
-    });
+    render(<Homepage />);
+    const initialText = screen.getByText(/A maior plataforma de criptomoedas/i);
     expect(initialText).toBeInTheDocument();
   });
   test('Testar se o botão com o texto start redireciona para a rota "/login" ', () => {
