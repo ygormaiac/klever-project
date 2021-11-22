@@ -13,7 +13,6 @@ export default function WalletItem() {
 
     return (
         money.map((expense) => (
-            <tbody className="table-items">
                 <tr key={expense.id} className="tr-items-add">
                     <td>{expense.valor}</td>
                     <td>{expense.metodo}</td>
@@ -42,7 +41,6 @@ export default function WalletItem() {
                     </Link>
                     </td>
                 </tr>
-            </tbody>
         ))
     )
 }
