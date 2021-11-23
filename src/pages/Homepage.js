@@ -67,7 +67,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-            <section>
+            <section className="selection-container">
                 <h3 className="title-selection">Veja nossa seleção de ativos:</h3>
                 <div className="selection-details">
                     { data.map((cripto, index) => (

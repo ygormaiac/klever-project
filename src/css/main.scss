@@ -4,13 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Red+Hat+Display&family=Righteous&family=Roboto:wght@300&family=Source+Code+Pro:wght@600&family=Ubuntu:wght@500&display=swap');
 
 @media screen and (max-width: 1250px) {
-    .section-presentation, .section-details, .information-details {
+    .section-presentation, .section-details, .information-details, .selection-container {
         flex-direction: column;
         margin: 0 auto;
     }
 
     .section-initial {
-        margin-left: 60px;
+        text-align: center;
+    }
+
+    .selection-container {
+        justify-content: center;
+    }
+
+    .header-button-login {
+        margin-right: 120px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .title-information, .title-selection {
+        font-size: 1em;
     }
 }
 
@@ -178,7 +193,7 @@ a {
 .title-information {
     text-align: center;
     margin-top: 50px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     letter-spacing: 2px;
     color: whitesmoke;
 }
@@ -199,7 +214,7 @@ a {
 .title-selection {
     text-align: center;
     margin-top: 50px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     letter-spacing: 2px;
     color: #1d1e20;
 }

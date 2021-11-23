@@ -1,9 +1,9 @@
 import { fireEvent, screen, render } from '@testing-library/react';
-import App from './App';
-import Login from './pages/Login';
-import Homepage from './pages/Homepage';
-import renderWithRouter from './renderWithRouter';
-import Wallet from './pages/Wallet';
+import App from '../App';
+import Login from '../pages/Login';
+import Homepage from '../pages/Homepage';
+import renderWithRouter from '../renderWithRouter';
+import Wallet from '../pages/Wallet';
 
 describe('Testando a homepage e a página de login', () => {
   test('Testar se o link com texto "Login" redireciona para a rota "/login" ', () => {

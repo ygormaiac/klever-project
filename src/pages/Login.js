@@ -9,6 +9,9 @@ export default function Login() {
 
     const navigate = useNavigate();
 
+    // const passwordLength = 6;
+    // const passwordCorrect = loginValue.password.length >= passwordLength;
+
     function validateEmail(email) {
         var re = /\S+@\S+\.\S+/;
         return re.test(email);
